@@ -5,7 +5,7 @@ import (
 	"go/parser"
 	"go/token"
 	"io/ioutil"
-	"log"
+	log "github.com/c2nc/protoc-go-inject-tag/logger"
 	"os"
 	"strings"
 )
@@ -105,6 +105,6 @@ func writeFile(inputPath string, areas []textArea) (err error) {
 		return
 	}
 
-	log.Printf("file %q is injected with custom fields", inputPath)
+	log.Infof("file %q is injected with custom fields", inputPath)
 	return
 }
