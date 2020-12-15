@@ -1,5 +1,3 @@
-github.com/c2nc/protoc-go-inject-tag v0.0.0-20190313102804-ddd4fda199a0 h1:+H3k6Lmmw3eBZNJE4CVad7OvIgMbSBCBbmTZCn4c9Lo=
-github.com/c2nc/protoc-go-inject-tag v0.0.0-20190313102804-ddd4fda199a0/go.mod h1:tUb48NoqlFFaGvVTdb1U3rchsVevgBRMPw79BUurFlE=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/jawher/mow.cli v1.2.0 h1:e6ViPPy+82A/NFF/cfbq3Lr6q4JHKT9tyHwTCcUQgQw=
