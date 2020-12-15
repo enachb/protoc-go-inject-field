@@ -8,7 +8,6 @@ import (
 	"regexp"
 
 	cli "github.com/jawher/mow.cli"
-	log "github.com/joaosobral/protoc-go-inject-tag/logger"
 )
 
 const (
@@ -40,20 +39,16 @@ type textArea struct {
 
 func processFile(inputFile string) {
 	if len(inputFile) == 0 {
-		log.Fatal("input file is mandatory")
+		ErrorLog.Fatal("input file is mandatory")
 	}
 
 	areas, err := parseFile(inputFile)
 	if err != nil {
-		log.Fatal(err)
+		ErrorLog.Fatal(err)
 	}
 	if err = writeFile(inputFile, areas); err != nil {
-		log.Fatal(err)
+		ErrorLog.Fatal(err)
 	}
-}
-
-func init() {
-	log.SetLogLevel("debug")
 }
 
 func main() {
@@ -67,7 +62,7 @@ func main() {
 	app.Action = func() {
 		content, err := ioutil.ReadDir(*input)
 		if err != nil {
-			log.Fatalf("Read file error %v", err)
+			ErrorLog.Fatalf("Read file error %v", err)
 		}
 
 		for _, f := range content {
@@ -83,6 +78,6 @@ func main() {
 	}
 
 	if err := app.Run(os.Args); err != nil {
-		log.Fatalf("%s error: %v", AppName, err)
+		ErrorLog.Fatalf("%s error: %v", AppName, err)
 	}
 }

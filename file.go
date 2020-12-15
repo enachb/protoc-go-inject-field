@@ -7,8 +7,6 @@ import (
 	"io/ioutil"
 	"os"
 	"strings"
-
-	log "github.com/joaosobral/protoc-go-inject-tag/logger"
 )
 
 // parseFile scans the input file and returns list of structs to inject custom fields to.
@@ -106,7 +104,7 @@ func writeFile(inputPath string, areas []textArea) (err error) {
 		return
 	}
 	if len(areas) != 0 {
-		log.Infof("file %q is injected with custom fields", inputPath)
+		InfoLog.Printf("file %q is injected with custom fields", inputPath)
 	}
 
 	return
