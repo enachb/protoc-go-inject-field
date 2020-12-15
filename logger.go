@@ -7,7 +7,9 @@ import (
 
 var (
 	//WarnLog  *log.Logger
-	InfoLog  *log.Logger
+	//InfoLog for logging information
+	InfoLog *log.Logger
+	//ErrorLog for error information
 	ErrorLog *log.Logger
 	//DebugLog *log.Logger
 )

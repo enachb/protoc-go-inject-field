@@ -10,10 +10,11 @@ import (
 	cli "github.com/jawher/mow.cli"
 )
 
+//Application version and description
 const (
 	AppName  = "protoc-go-inject-field"
-	AppVer   = "1.0.1"
-	AppDescr = "Protobuf custom fields"
+	AppVer   = "1.1"
+	AppDescr = "Protobuf custom fields and tags"
 )
 
 var rComment = regexp.MustCompile(`//\s*@inject_field:\s+(\S+)\s+(\S+)\s*(\S*)$`)
