@@ -5,12 +5,12 @@ import (
 	"os"
 )
 
+//Block of logging functions
 var (
-	//WarnLog  *log.Logger
-	//InfoLog for logging information
-	InfoLog *log.Logger
-	//ErrorLog for error information
+	InfoLog  *log.Logger
 	ErrorLog *log.Logger
+
+	//WarnLog  *log.Logger
 	//DebugLog *log.Logger
 )
 
@@ -21,7 +21,8 @@ func init() {
 	}
 
 	InfoLog = log.New(file, "INFO: ", log.Ldate|log.Ltime|log.Lshortfile)
-	//WarnLog = log.New(file, "WARNING: ", log.Ldate|log.Ltime|log.Lshortfile)
 	ErrorLog = log.New(file, "ERROR: ", log.Ldate|log.Ltime|log.Lshortfile)
+
+	//WarnLog = log.New(file, "WARNING: ", log.Ldate|log.Ltime|log.Lshortfile)
 	//DebugLog = log.New(file, "DEBUG: ", log.Ldate|log.Ltime|log.Lshortfile)
 }
