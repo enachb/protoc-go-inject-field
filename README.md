@@ -1,6 +1,10 @@
 # protoc-go-inject-field
-[![Build Status](https://travis-ci.org/favadi/protoc-go-inject-field.svg?branch=master)](https://travis-ci.org/favadi/protoc-go-inject-field)
-[![Go Report Card](https://goreportcard.com/badge/github.com/favadi/protoc-go-inject-field)](https://goreportcard.com/report/github.com/favadi/protoc-go-inject-field)
+
+[![Go Report Card](https://goreportcard.com/badge/github.com/JoaoSobral/protoc-go-inject-field)](https://goreportcard.com/report/github.com/JoaoSobral/protoc-go-inject-field)
+
+This is a fork version of https://github.com/favadi/protoc-go-inject-field. Go there for original code and **my thanks to favadi (Diep Pham) for developing it in the first place.**
+
+This version includes tags on custom fields and was updated using go mod.
 
 ## Why?
 
@@ -10,7 +14,7 @@ getter/setter methods to generated .pb.go files.
 
 ## Install
 
-`go get github.com/favadi/protoc-go-inject-field`
+`go get github.com/joaosobral/protoc-go-inject-field`
 
 ## Usage
 
