@@ -13,7 +13,7 @@ func injectField(contents []byte, area textArea) (injected []byte) {
 	for _, field := range area.fields {
 		customFieldsContents = append(
 			customFieldsContents,
-			[]byte(fmt.Sprintf("\t%s %s\n", field.fieldName, field.fieldType))...)
+			[]byte(fmt.Sprintf("\t%s %s %s\n", field.fieldName, field.fieldType, field.fieldTag))...)
 	}
 
 	helperMethodContents := []byte("\n// custom fields getter/setter\n")
@@ -54,7 +54,9 @@ func (m *%s) Set%s(in %s){
 func fieldFromComment(comment string) *customField {
 	match := rComment.FindStringSubmatch(comment)
 	if len(match) == 3 {
-		return &customField{fieldName: match[1], fieldType: match[2]}
+		return &customField{fieldName: match[1], fieldType: match[2], fieldTag: ""}
+	} else if len(match) == 4 {
+		return &customField{fieldName: match[1], fieldType: match[2], fieldTag: match[3]}
 	}
 	return nil
 }
