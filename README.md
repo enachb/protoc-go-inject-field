@@ -1,6 +1,7 @@
 # protoc-go-inject-field
-
+[![Build Status](https://travis-ci.org/JoaoSobral/protoc-go-inject-field.svg?branch=master)](https://travis-ci.org/JoaoSobral/protoc-go-inject-field)
 [![Go Report Card](https://goreportcard.com/badge/github.com/JoaoSobral/protoc-go-inject-field)](https://goreportcard.com/report/github.com/JoaoSobral/protoc-go-inject-field)
+[![Maintainability](https://api.codeclimate.com/v1/badges/bf621632b95d10ed9408/maintainability)](https://codeclimate.com/github/JoaoSobral/protoc-go-inject-field/maintainability)
 
 This is a fork version of https://github.com/favadi/protoc-go-inject-field. Go there for original code and **my thanks to favadi (Diep Pham) for developing it in the first place.**
 
