@@ -1,4 +1,4 @@
-module github.com/joaosobral/protoc-go-inject-field
+module github.com/enachb/protoc-go-inject-field
 
 go 1.15
 
